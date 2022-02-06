@@ -22,8 +22,8 @@ async function sendMsg(res, merchant, amount, userID) {
 	var divAmount = (amount/100).toLocaleString(
 		"en-gb", 
 		{ minimumFractionDigits: 2 }
-	);
-	var msg = "Again?! Do you really need another £" + divAmount + " at " + merchant + " today?";
+	).split("-")[1];
+	var msg = "Again?! Do you really need to spend another £" + divAmount + " at " + merchant + " this month?";
 	var dbuser = dbUsers.doc(userID);
 	const doc = await dbuser.get();
 	if (!doc.exists) {
