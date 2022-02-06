@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.6.6/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.6.6/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.6.6/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Home - Brand</title>
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
+	<nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+		<div class="container"><button data-bs-toggle="collapse" class="navbar-toggler"
+				data-bs-target="#navcol-1"></button>
+			<div class="collapse navbar-collapse" id="navcol-1"><img src="assets/img/Knulla-logos_transparent.png"
+					width="50mm" height="50"><a class="btn btn-primary ms-auto" role="button" href="#">F&amp;Q</a></div>
+		</div>
+	</nav>
+	<header class="text-center text-white masthead"
+		style="background:url('assets/img/bg-masthead.jpg')no-repeat center center;background-size:cover;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-9 mx-auto position-relative">
+					<h1 class="mb-5"><strong>A banking app that swears at you for buying McDonalds</strong><br></h1>
+				</div>
+				<div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
+					<form>
+						<div class="row">
+							<div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg"
+									type="email" placeholder="Enter your email..."></div>
+							<div class="col-12 col-md-3"><button class="btn btn-primary btn-lg" type="submit">Sign
+									up!</button></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="text-center bg-light features-icons">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+						<div class="d-flex features-icons-icon"><i class="icon-screen-smartphone m-auto text-primary"
+								data-bss-hover-animate="pulse"></i></div>
+						<h3>Gamified Banking</h3>
+						<p class="lead mb-0">A new form of banking which talks to you and helps you reach the top of the
+							leader boards.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+						<div class="d-flex features-icons-icon"><i class="icon-bubbles m-auto text-primary"
+								data-bss-hover-animate="pulse"></i></div>
+						<h3>Customizable Messages</h3>
+						<p class="lead mb-0">Choose between a range of family friendly messages or profanity filled
+							alerts to tell you when you've spent money.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+						<div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary"
+								data-bss-hover-animate="pulse"></i></div>
+						<h3>Easy to Use</h3>
+						<p class="lead mb-0">Simple design&nbsp; for all people whether you're a baby or Albert
+							Einstein's ghost.&nbsp;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/script.min.js"></script>
+</body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
 </html>
