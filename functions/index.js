@@ -33,7 +33,7 @@ async function sendMsg(res, merchant, amount, userID) {
 		}, {merge: true});
 		switch (currentQty) {
 		case 1: 
-			msg = "Fine, I'll let you off just this once. But watch it,ß we don't want to spend too much at " + merchant;
+			msg = "Fine, I'll let you off just this once. But watch it, we don't want to spend too much at." + merchant;
 			break;
 		case 2:
 		case 3:
