@@ -28,13 +28,20 @@ async function sendMsg(res, merchant, amount, userID) {
 	} else {
 		var phone = doc.data().phone;
 		var currentQty = doc.data()[merchant];
-		dbuser.set({
-			[merchant]: Number(currentQty) + 1
-		}, {merge: true});
+		if (currentQty == undefined) {
+			dbuser.set({
+				[merchant]: 1
+			}, {merge: true});
+		} else {
+			dbuser.set({
+				[merchant]: Number(currentQty) + 1
+			}, {merge: true});
+		}
 		switch (currentQty) {
-		case 1: 
+		case undefined: 
 			msg = "Fine, I'll let you off just this once. But watch it, we don't want to spend too much at." + merchant;
 			break;
+		case 1:
 		case 2:
 		case 3:
 		case 4:
