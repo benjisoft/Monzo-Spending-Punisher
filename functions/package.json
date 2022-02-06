@@ -10,14 +10,14 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "16"
+    "node": "14"
   },
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^10.0.2",
     "firebase-functions": "^3.17.1",
-    "node": "^17.4.0",
-    "twilio": "^3.73.1"
+    "intl": "^1.2.5",
+    "twilio": "3.73.1"
   },
   "devDependencies": {
     "eslint": "^7.6.0",
