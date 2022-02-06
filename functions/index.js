@@ -25,6 +25,11 @@ async function sendMsg(res, merchant, amount, userID) {
 	const doc = await dbuser.get();
 	if (!doc.exists) {
 		console.error("No such user!");
+		dbuser.set({
+			requiresConfig: true,
+			name: "", 
+			phone: ""
+		}, {merge: true});
 	} else {
 		var phone = doc.data().phone;
 		var currentQty = doc.data()[merchant];
